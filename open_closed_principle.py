@@ -42,8 +42,10 @@ class Company:
 
 if __name__ == '__main__':
     tester = Tester('Akshay', 5000)
-    developer = Developer('vinay', 5000)
+    developer = Developer('Vinay', 5000)
     company = Company('TATA')
     company.work(tester)
     company.work(developer)
+
+
 

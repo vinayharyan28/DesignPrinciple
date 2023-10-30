@@ -28,6 +28,8 @@ class Teacher(Member, Payer):
 
 class Manger(Member, Payer):
     def __init__(self, name, age, manager_id):
+        self.name = name
+        self.age = age
         self.manager_id = manager_id
 
     def save_database(self):

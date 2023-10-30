@@ -1,7 +1,10 @@
+from abc import ABC, abstractmethod
+
+
 """
 Let's say you need to charge your phone. you would connect the adapter to
 the socket and it is done. you wouldn't think about what is behind the wall
-and details of how you get the electricity (I mean if you are not an electrical
+and details of how you get the electricity I mean if you are not an electrical
 engineer or something like that. that should be the case with your class too.
 Your high level classes (such as activityStreamer) should depend upon abstraction/interface
 not concrete classes. let give an example of bad practice.
@@ -9,7 +12,8 @@ not concrete classes. let give an example of bad practice.
 
 
 class Syslog:
-    def write(self, msg):
+    @staticmethod
+    def write(msg):
         with open('path', 'a') as f:
             f.write(msg)
 
@@ -38,8 +42,6 @@ How could we design our classes so that we could get rid of those problems?
 
 
 """
-
-from abc import ABC, abstractmethod
 
 
 class EventSender(ABC):

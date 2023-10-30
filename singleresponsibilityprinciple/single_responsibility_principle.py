@@ -12,5 +12,5 @@ class Person:
 
 
 if __name__ == '__main__':
-    person = Person('vinay')
-    person.save(person)
+    vinay = Person('vinay')
+    vinay.save(vinay)

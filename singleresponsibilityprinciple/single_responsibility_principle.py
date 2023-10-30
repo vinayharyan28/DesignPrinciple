@@ -1,4 +1,3 @@
-# A class should have one, & only one reason to change
 
 class Person:
     def __init__(self, name):
